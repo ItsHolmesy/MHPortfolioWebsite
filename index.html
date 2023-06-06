@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/Grid.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
+        <script defer src="resources/js/script.js"></script>
+
+        <title>Matthew Holmes Portfolio Hub</title>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <div class="row">
+                    <ul class="main-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="dicegame.html">Dice Game</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <button id="dark-mode-toggle" class="dark-mode-toggle">
+                
+                
+            </button>
+            <div class="hero-text-box">
+                <h1>Matthew Holmes</h1>
+                <a class="btn btn-full" href="#contact-me">Get in Touch</a>
+                <a class="btn btn-ghost" href="#work-experience">Work Experience!</a>
+            </div>
+        </header>
+        
+
+        <section class="section-intro">
+            <div class="row">
+                <h2>About Me</h2>
+                <p class="long-copy">
+                    Hi, Welcome to this mish-mash of portfolio website and resume! My name is Matthew Holmes, an amateur/entry level coder looking for a foot in the door with an entry-level job. Particularly with web development at the moment.
+                    This website serves a two-fold purpose, showcasing my knowledge of HTML, CSS and Javascript whilst also acting as a working resume including reference contacts and my work history. <br>
+                    Speaking of work history, I am currently working as an Emergency Services Access Point operator, or ESAP for short, starting back in 2021, right on the start of COVID's rise in Melbourne.
+                </p>
+            </div>
+
+            <div class="row">
+                <div class="col span-1-of-2 box">
+                    <i class="ion-information-circled icon-big"></i>
+                    <h3>What programming experience do I have?</h3>
+                    <p>
+                        So far, this website will serve to demonstrate my understanding and knowledge of HTML, CSS and Javascript. Though lacks in database implementation. A clearer demonstration of this can be found within the Dice Game, accessible via the navbar!
+                    </p>
+                </div>
+                <div class="col span-1-of-2 box">
+                    <i class="ion-information-circled icon-big"></i>
+                    <h3>Where do I currently work?</h3>
+                    <p>
+                        Currently I work with Telstra as an Emergency 000 Call Operator, taking and directing emergency calls nationally to Emergency Services (Police, Fire and Ambulance).
+                    </p>
+                </div>
+            </div>
+        </section>
+        <h3 class="photo-prompt">Click the photos to pull up my prior experience!</h3>
+        <section id="work-experience" class="section-work">
+            <ul class="work-showcase clearfix">
+                <li>
+                    <figure class="work-photo">
+                        <button js-olinda-open="#olinda-open" class="work-experience" id="olinda">
+                            <img src="resources/img/previous work/olinda-creek-hotel.png" alt="Picture of the Olinda Creek Hotel">
+                        </button>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="work-photo">
+                        <button js-woolworths-open="#woolworths-open" class="work-experience" id="woolworths">
+                            <img src="resources/img/previous work/Woolworths-Lilydale.jpg" alt="Screenshot of Woolworths Lilydale">
+                        </button>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="work-photo">
+                        <button js-telstra-open="telstra-open" class="work-experience" id="telstra">
+                            <img src="resources/img/previous work/telstra.jpg" alt="Screenshot of x">
+                        </button>
+                    </figure>
+                </li>
+            </ul>
+        </section>
+        <div class="popup" id="olinda-popup">
+            <div class="popup-header">
+                <div class="popup-title">
+                    Olinda Creek Hotel <br>
+                    <i>September 2019-April 2020</i>
+                </div>
+                <button js-close-popup  class="popup-close">&times;</button>
+            </div>
+            <div class="popup-body experience-text">
+                &#x2022; Bar work and waiting/bussing and working the pass along with a handful of kitchenhand shifts.<br>
+                <br>
+                &#x2022; Demonstrated ability to work within a fast-paced, unpredictable work envrionment. <br>
+                <br>
+                &#x2022; Entrusted with closing. <br>
+            </div>
+        </div>
+        <div class="popup" id="woolworths-popup">
+            <div class="popup-header">
+                <div class="popup-title">
+                    Woolworths Lilydale <br>
+                    <i>April 2020 - January 2021</i>
+                </div>
+                <button js-close-popup  class="popup-close">&times;</button>
+            </div>
+            <div class="popup-body experience-text">
+                &#x2022; Online Pick-Packing for Click and Collect and Online Delivery, along with customer service during register-allocated shifts. <br>
+                <br>
+                &#x2022; Demonstrated ability to work within daily/bi-daily deadlines according to performance KPIs.<br>
+                <br>
+                &#x2022; Worked in a fast-paced environment with a strong requirement for social skills and active problem solving.
+            </div>
+        </div>
+        <div class="popup" id="telstra-popup">
+            <div class="popup-header">
+                <div class="popup-title">
+                    Telstra 000 <br>
+                    <i>May 2021 - Ongoing</i>
+                </div>
+                <button js-close-popup  class="popup-close">&times;</button>
+            </div>
+            <div class="popup-body experience-text">
+                &#x2022; Directed calls to locational emergency services on a national scale. <br>
+                <br>
+                &#x2022; Worked in a high-stress, high-demand and fast-paced work environment to ensure timely connection in crisis situations. Including Natural Disaster, Medical Emergencies, etc. <br>
+                <br>
+                &#x2022; Performed within monthly KPIs, which included Quality Assurance Reports and Speed of Answer. <br>
+                <br>
+                &#x2022; Strong requirement for empathy, emotional maturity and social skills.
+            </div>
+        </div>
+
+
+        <section class="section-references-testamonials">
+            <div class="row">
+                <h2>My References</h2>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <blockquote>
+                        Customer Service & Support Team Leader<br>
+                        Emergency Services Windsor <br>
+                        
+                        Perrie.massouras@team.telstra.com <br>
+                        0414 938 931 <br>
+                        03 9296 6508
+                        <cite><img src="Logos/Logos/telstra.png">Perrie Massouras</cite>
+                    </blockquote>
+                </div>
+                <div class="col span-1-of-3">
+                    <blockquote>
+                        Technical Solutions Manager <br>
+                        Programmed Melbourne <br>
+
+                        scottm@yellowtwist.net <br>
+                        0437 453 136
+                        <cite><img src="Logos/Logos/programmed.png">Scott Martin</cite>
+                    </blockquote>
+                </div>
+                <div class="col span-1-of-3">
+                    <blockquote>
+                         Customer Service & Support Team Leader <br>
+                         Emergency Services Windsor <br>
+
+                         richard.j.philipe@team.telsta.com <br>
+                         0409 405 887
+
+                         <cite><img src="Logos/Logos/telstra.png">Richard Philipe</cite>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-me" class="section-contactt">
+            <div class="row">
+                <h2>Contact Methods</h2>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <div class="contact-box">
+                        <div>
+                            <p class="contact-type">Email</p>
+
+                            <p class="contact-type-meaning">Easiest form of contact!</p>
+                        </div>
+                        <div>
+                            <button js-email-open="#email-popup">
+                                <p class="btn btn-full">My Email</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup" id="email-popup">
+                    <div class="popup-header">
+                        <div class="popup-title">
+                            Send me an email and I'll get to you when I can!
+                        </div>
+                        <button js-close-popup class="popup-close">&times;</button>
+                    </div>
+                    <div class="popup-body">
+                        matt@yellowtwist.net
+                    </div>
+                </div>
+                
+                <div class="col span-1-of-2">
+                    <div class="contact-box">
+                        <div>
+                            <p class="contact-type">Phone Number</p>
+                            <p class="contact-type-meaning">A more direct form of contact.</p>
+                        </div>
+                        <div>
+                            <button js-phone-open="#phone-popup">
+                                <p class="btn btn-ghost">My Phone Number</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup" id="phone-popup">
+                    <div class="popup-header">
+                        <div class="popup-title">
+                            Direct Contact! At your fingertips!
+                        </div>
+                        <button js-close-popup class="popup-close">&times;</button>
+                    </div>
+                    <div class="popup-body">
+                        0467 470 246
+                    </div>
+                </div>
+                <div id="overlay"></div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="row social-link-section">
+                    <ul class="social-links">
+                        <li><a href="https://twitter.com/ItsHolmsey"><i class="ion-social-twitter"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/matthew-holmes-83270316a/"><i class="ion-social-linkedin"></i></a></li>
+                    </ul>
+            </div>
+            <div class="row">
+                <p>
+                    This used to be a volunteer project of mine! Intended to be a Community Website. The community since fell through so I decided to turn it into a portfolio/resume piece.
+                </p>
+            </div>
+
+        </footer>
+    </body>
+
+</html>
