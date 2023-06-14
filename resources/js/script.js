@@ -78,7 +78,7 @@ openPhonePopUp.forEach(button => {
 // Email
 openEmailPopUp.forEach(button => {
     button.addEventListener('click', () => {
-        const popup = document.getElementById('-popup');
+        const popup = document.getElementById('email-popup');
         openPopUp(popup);
     })
 })
