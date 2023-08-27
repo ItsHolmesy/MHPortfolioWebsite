@@ -1,3 +1,6 @@
+/* Importing Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 /* -------------------------------------------------------------------- */
 /* BASIC SETUP */
 /* -------------------------------------------------------------------- */
@@ -15,7 +18,7 @@ html,
 body {
     background-color: #fff;
     color: #555;
-    font-family: 'Lato', 'Arial', sans-serif;
+    font-family: 'Poppins', 'Arial', sans-serif;
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
@@ -249,6 +252,8 @@ header {
 
 .section-intro .long-copy { margin-bottom: 30px; }
 
+.section-intro h3 { text-align: center; }
+
 /* -------------------------------------------------------------------- */
 /* SCREENSHOTS */
 /* -------------------------------------------------------------------- */
@@ -264,7 +269,7 @@ header {
 .work-showcase {
     list-style: none;
     width: 100%;
-
+    background: #ddd;
 }
 
 .work-showcase li {
@@ -298,6 +303,9 @@ header {
     transform: scale(1.03);
 }
 
+.mm-image {
+    object-fit: cover;
+}
 
 /* -------------------------------------------------------------------- */
 /* TESTIMONIALS */
@@ -319,7 +327,7 @@ blockquote {
 
 blockquote:before {
     content: "\201C";
-    font-size: 500%;
+    font-size: 200%;
     display: block;
     position: absolute;
     top: -5px;
@@ -490,7 +498,7 @@ footer p {
 
 .popup-body {
     padding: 10px 15px;
-    font-size: 300%;
+    font-size: 200%;
     font-weight: 500;
 }
 
