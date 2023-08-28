@@ -1,4 +1,16 @@
 # MHPortfolioWebsite
+VERSION 1.2
+
+- Swapped out old reference for a newer and more up to date one, (also far more relevant for the work I am trying to get as well)
+
+- Swapped out old work experience to match new reference.
+
+- Changed font from Lato to Poppins.
+
+- Added Email form via Formspree. I can now officially receive emails from interested people! No server code involved!
+
+///////////////////////////////////////////////
+
 My Portfolio Website
 
 Hi there, this is kind of my little web-develeopment and hub for all my portfolio work - even if github achieves the same thing, I love the idea of a user-friendly and easy to navigate, interactable way to reach and review all my works.
