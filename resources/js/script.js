@@ -2,16 +2,16 @@
 WORK POPUPS
  *******************************************************/
 
-const openOlindaPopUps = document.querySelectorAll('[js-olinda-open]');
+const openMMPopUps = document.querySelectorAll('[js-mm-open]');
 const openWoolworthsPopUps = document.querySelectorAll('[js-woolworths-open]');
 const openTelstraPopUps = document.querySelectorAll('[js-telstra-open]');
 const closePopUps = document.querySelectorAll('[js-close-popup]');
 const overlay = document.getElementById('overlay');
 
-// Olinda
-openOlindaPopUps.forEach(button => {
+// MM
+openMMPopUps.forEach(button => {
     button.addEventListener('click', () => {
-        const popup = document.getElementById('olinda-popup');
+        const popup = document.getElementById('mm-popup');
         openPopUp(popup);
     });
 });
