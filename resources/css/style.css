@@ -267,22 +267,28 @@ header {
 .section-work { padding: 0; }
 
 .work-showcase {
+    display: flex;
     list-style: none;
     width: 100%;
-    background: #ddd;
 }
 
 .work-showcase li {
-    display: block;
-    float: left;
-    width: 33%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .work-photo {
-    width: 100%;
+    flex: auto;
+    display: flex;
     margin: 0;
     overflow: hidden;
-    background-color: #000;
+}
+
+.work-experience {
+    flex: auto;
+    display: flex;
 }
 
 .work-photo img {
@@ -391,6 +397,52 @@ cite img {
 
 .contact-type-meaning { font-size: 80%; }
 
+/* EMAIL FORM */
+
+.form {
+    width: 400px;
+    height: 25px;
+    padding: 20px;
+    position: relative;
+}
+
+label {
+    display: block;
+    text-align: start;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.message-input-label {
+    margin-top: 30px;
+}
+/* Input */
+
+.email-input {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.5em;
+    display: block;
+    width: 80%;
+    border: 1px solid;
+    outline: none;
+    padding: 1em;
+}
+
+.message-input {
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid;
+    font-size: 0.5em;
+    display: block;
+    width: 80%;
+    outline: none;
+    height: 200px;
+    padding: 0.5em
+}
+
+.email-send {
+    margin-top: 20px;
+    font-size: 20px;
+}
 /* -------------------------------------------------------------------- */
 /* FOOTER */
 /* -------------------------------------------------------------------- */
