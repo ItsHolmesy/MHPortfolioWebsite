@@ -70,7 +70,7 @@
             <ul class="work-showcase clearfix">
                 <li>
                     <figure class="work-photo">
-                        <button js-mm-open="#mm-open" class="work-experience" id="mm">
+                        <button js-mm-open="#mm-open" class="work-experience mm-image" id="mm">
                             <img src="resources/img/previous work/MM Logo.svg" alt="Of Machines and Men Logo">
                         </button>
                     </figure>
@@ -213,7 +213,22 @@
                         <button js-close-popup class="popup-close">&times;</button>
                     </div>
                     <div class="popup-body">
-                        matt@yellowtwist.net
+                        <form 
+                            class="email-form"
+                            action="https://formspree.io/f/mdorgjkb"
+                            method="POST"
+                            >
+                            <label>
+                                Your email:
+                                <input class="email-input" type="email" name="email" required>
+                            </label>
+                            <label>
+                                Your message:
+                                <textarea class="message-input" name="message" required></textarea>
+                            </label>
+                            <!-- your other form fields go here -->
+                            <button type="submit">Send</button>
+                        </form>
                     </div>
                 </div>
                 
